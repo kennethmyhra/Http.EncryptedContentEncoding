@@ -2,7 +2,7 @@
 
 ## Introduction
 The following example was inspired by [RFC8188][rfc8188] which was published as
-a propsed standard June 2017 by M. Thomson and the Mozilla organization. It
+a proposed standard June 2017 by M. Thomson and the Mozilla organization. It
 uses a slightly modified version of the [.NET implementation][lib-ece] by
 Tomasz Pęczek.
 
