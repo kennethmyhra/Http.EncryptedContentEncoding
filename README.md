@@ -15,5 +15,8 @@ application. The Client application will issue a GET and a POST request
 respectively and output the encrypted and decrypted content to the console
 window.
 
+## Contributing
+We are welcoming contributors!
+
 [rfc8188]: https://tools.ietf.org/html/rfc8188
 [lib-ece]: https://github.com/tpeczek/Lib.Net.Http.EncryptedContentEncoding
