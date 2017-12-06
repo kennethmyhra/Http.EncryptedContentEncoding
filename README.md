@@ -6,7 +6,7 @@ a proposed standard June 2017 by M. Thomson and the Mozilla organization. It
 uses a slightly modified version of the [.NET implementation][lib-ece] by
 Tomasz Pęczek.
 
-The example is a proof of concept of end-to-end communication over HTTP with a
+The example is a proof of concept of end-to-end encryption over HTTP with a
 RESTful endpoint.
 
 ## Getting Started
