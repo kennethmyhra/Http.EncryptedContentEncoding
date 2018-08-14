@@ -73,6 +73,7 @@ namespace Http.EncryptedContentEncoding.Client
             using (HttpClient client = new HttpClient())
             {
                 HttpContent content = new StringContent(data);
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                 byte[] key = _keyLocator(keyId);
                 HttpContent encryptedContent = new Aes128GcmEncodedContent(content, key, keyId, 4096);
 
