@@ -55,8 +55,11 @@ namespace Http.EncryptedContentEncoding.Client
             if (response.IsSuccessStatusCode)
             {
                 output.WriteLine($"Encrypted content: {response.Content.ReadAsStringAsync().GetAwaiter().GetResult()}");
-                response.Content = new Aes128GcmDecodedContent(response.Content, _keyLocator);
-                output.WriteLine($"Decrypted content: {response.Content.ReadAsStringAsync().GetAwaiter().GetResult()}");
+                if (response.Content.Headers.ContentEncoding.Contains("aes128gcm"))
+                {
+                    response.Content = new Aes128GcmDecodedContent(response.Content, _keyLocator);
+                    output.WriteLine($"Decrypted content: {response.Content.ReadAsStringAsync().GetAwaiter().GetResult()}");
+                }
             }
         }
         
