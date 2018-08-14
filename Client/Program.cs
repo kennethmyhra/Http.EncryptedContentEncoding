@@ -81,7 +81,7 @@ namespace Http.EncryptedContentEncoding.Client
                 client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("aes128gcm"));
                 content.Headers.ContentType = new MediaTypeHeaderValue(contentType);
                 
-                return await client.PostAsync(url, content);
+                return await client.PostAsync(url, encryptedContent);
             }
         }
 
