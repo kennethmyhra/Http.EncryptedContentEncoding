@@ -1,4 +1,4 @@
-# Example of Encrypted Content Encoding over HTTP and RESTful services
+# Example of Encrypted Content Encoding over HTTP and REST
 
 ## Introduction
 The following example was inspired by [RFC8188][rfc8188] which was published as
